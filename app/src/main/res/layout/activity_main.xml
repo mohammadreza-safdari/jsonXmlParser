@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_jdom_parser_XML"
+            android:text="jdom parse XML"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pull_parser_XML"
+            android:text="pull parser XML"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_parse_JSON"
+            android:text="parse JSON"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_GSON"
+            android:text="GSON"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/data_lv"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></ListView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_clear"
+        android:text="clear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>
